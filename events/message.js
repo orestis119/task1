@@ -14,9 +14,4 @@ module.exports = async(client, message) => {
 	
     cmd.run(client, message, args)
 
-    // message collector here
-
-    
-
-
 }
