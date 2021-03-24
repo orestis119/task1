@@ -4,7 +4,8 @@ let count = 0
 
 module.exports.run = async(client, message, args) => {
     await message.channel.send("Let's start!")
-    await message.channel.send(quetstions[count]) + count++
+    await message.channel.send(quetstions[count])
+    count++
     const filter = m => m.author.id == message.author.id;
     const collector = message.channel.createMessageCollector(filter, { max: quetstions.length, time: 20000 });
 
